@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ash.exe has received a tiny apology gift</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Quicksand:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- decorative scrap frame, present on every screen -->
+<div class="scrap-frame" aria-hidden="true">
+  <svg class="rivet rivet-tl" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3" class="rivet-hole"/></svg>
+  <svg class="rivet rivet-tr" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3" class="rivet-hole"/></svg>
+  <svg class="rivet rivet-bl" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3" class="rivet-hole"/></svg>
+  <svg class="rivet rivet-br" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3" class="rivet-hole"/></svg>
+</div>
+
+<div class="progress-rail" aria-hidden="true">
+  <div class="progress-fill" id="progressFill"></div>
+</div>
+
+<main id="scroller">
+
+  <!-- SCREEN 1 — INTRO -->
+  <section class="screen screen-intro" id="s1">
+    <div class="chain-strip top" aria-hidden="true"></div>
+    <p class="eyebrow">quest file // 001</p>
+    <h1 class="mega-title">ASH<span class="dot">.exe</span></h1>
+    <p class="subtitle">has received a tiny apology gift</p>
+
+    <div class="intro-row">
+      <div class="polaroid float-slow" data-name="cat.webp">
+        <img src="assets/cat.webp" alt="a very serious cat doing a little dance" onerror="this.parentElement.classList.add('img-missing')">
+        <span class="tape"></span>
+        <p class="cap">happy happy happy cat</p>
+      </div>
+    </div>
+
+    <p class="line line-1">Before you ask:</p>
+    <p class="line line-2">no, this is not fanfiction.</p>
+
+    <button class="btn btn-primary" data-next="s2">Enter the suspicious website →</button>
+    <p class="fine-print">(hope u enjoy it)</p>
+  </section>
+
+  <!-- SCREEN 2 — APOLOGY -->
+  <section class="screen screen-apology" id="s2">
+    <p class="eyebrow">quest file // 002</p>
+    <h2 class="section-title">Okay. Serious mode for 12 seconds.</h2>
+
+    <div class="apology-card">
+      <p>I know I messed up by not telling you everything earlier.</p>
+      <p>I'm not expecting you to instantly forget that, or act like nothing happened.</p>
+      <p>You already gave me the chance to stay close and earn your trust back with time, and I genuinely appreciate that more than I've said.</p>
+      <p>So instead of typing "sorry" for the 47th time, I wanted to actually put effort into it.</p>
+    </div>
+
+    <p class="aside">uhm, please like it <3</p>
+
+    <button class="btn btn-ghost" data-next="s3">Continue before this gets too sincere →</button>
+  </section>
+
+  <!-- SCREEN 3 — HUD -->
+  <section class="screen screen-hud" id="s3">
+    <p class="eyebrow">quest file // 003</p>
+    <h2 class="section-title">Trust Rebuild — status panel</h2>
+
+    <div class="hud-panel">
+      <div class="hud-row">
+        <span class="hud-label">Quest</span>
+        <span class="hud-value">REBUILD TRUST</span>
+      </div>
+      <div class="hud-row">
+        <span class="hud-label">Current objective</span>
+        <span class="hud-value">"don't make things worse" challenge</span>
+      </div>
+      <div class="hud-row">
+        <span class="hud-label">Progress</span>
+        <span class="hud-value hud-mono">???? / ????</span>
+      </div>
+      <div class="hud-bar-track" role="img" aria-label="decorative, not a real progress bar">
+        <div class="hud-bar-fill"></div>
+        <div class="hud-bar-rivets"></div>
+      </div>
+      <div class="hud-row">
+        <span class="hud-label">Trust level</span>
+        <span class="hud-value">under reconstruction</span>
+      </div>
+      <div class="hud-row">
+        <span class="hud-label">Estimated repair time</span>
+        <span class="hud-value">probably not 5 minutes</span>
+      </div>
+      <div class="hud-row">
+        <span class="hud-label">Required materials</span>
+        <span class="hud-value">honesty, consistency, not being stupid</span>
+      </div>
+    </div>
+
+    <p class="hud-footnote">(this bar does not track your forgiveness. it is decorative and a little dramatic, on purpose.)</p>
+
+    <button class="btn btn-primary" data-next="s4">Continue quest →</button>
+  </section>
+
+  <!-- SCREEN 4 — REWARD CARDS -->
+  <section class="screen screen-rewards" id="s4">
+    <p class="eyebrow">quest file // 004</p>
+    <h2 class="section-title">Loot inventory</h2>
+    <p class="section-sub">tap a card. that's it, that's the game.</p>
+
+    <div class="loot-grid">
+      <button class="loot-card" data-flip>
+        <div class="loot-face loot-front" data-name="fries.png">
+          <img class="loot-img" src="assets/fries.png" alt="fries" onerror="this.style.display='none'; this.parentElement.classList.add('img-missing')">
+          <span class="loot-fallback">🍟</span>
+          <span class="loot-name">Fries</span>
+        </div>
+        <div class="loot-face loot-back">
+          <p>Because fries make everything at least 3% better.</p>
+        </div>
+      </button>
+
+      <button class="loot-card" data-flip>
+        <div class="loot-face loot-front">
+          <div class="candy-stack" aria-hidden="true">
+            <img class="loot-img candy-img" src="assets/kitkat.png" alt="" onerror="this.style.display='none'">
+          </div>
+          <span class="loot-fallback">🍫</span>
+          <span class="loot-name">Chocolate</span>
+        </div>
+        <div class="loot-face loot-back">
+          <p>For emergency emotional damage. KitKat, Twix, Kinder Bueno — full emergency kit, no notes.</p>
+        </div>
+      </button>
+
+      <button class="loot-card" data-flip>
+        <div class="loot-face loot-front" data-name="cat.webp">
+          <img class="loot-img" src="assets/cat.webp" alt="cat" onerror="this.style.display='none'; this.parentElement.classList.add('img-missing')">
+          <span class="loot-fallback">🐈</span>
+          <span class="loot-name">Cat</span>
+        </div>
+        <div class="loot-face loot-back">
+          <p>Mandatory cat deployment. No further explanation provided.</p>
+        </div>
+      </button>
+
+      <button class="loot-card loot-rare" data-flip>
+        <div class="loot-face loot-front">
+          <span class="loot-fallback">⚙️</span>
+          <span class="loot-name">???</span>
+          <span class="rare-tag">rare</span>
+        </div>
+        <div class="loot-face loot-back">
+          <p>One tiny piece of effort. Scrap-forged, slightly rusted, still holds together. Kind of like an apology.</p>
+        </div>
+      </button>
+    </div>
+
+    <button class="btn btn-primary" data-next="s4b">Keep going →</button>
+  </section>
+
+  <!-- SCREEN 4B — THE CHOCOLATE INVESTIGATION -->
+  <section class="screen screen-investigation" id="s4b">
+    <p class="eyebrow">quest file // 005</p>
+    <h2 class="section-title">The Very Serious Ash Chocolate Investigation</h2>
+
+    <div class="investigation-report">
+      <p>I asked what your favorite chocolate was.</p>
+      <p>Apparently the answer is Twix, Kinder Bueno, and KitKat.</p>
+      <p class="aside">Unfortunately, my investigation has failed to identify the number one favorite.</p>
+    </div>
+
+    <p class="investigation-prompt">Select the superior snack.</p>
+    <p class="investigation-subprompt">Choose wisely. This information may or may not be used for future snack acquisition.</p>
+
+    <div class="choc-grid">
+      <button class="choc-card" data-choc="Twix">
+        <img src="assets/twix.png" alt="Twix" onerror="this.style.display='none'">
+        <span class="choc-fallback">🍫</span>
+        <span class="choc-label">Twix</span>
+      </button>
+      <button class="choc-card" data-choc="Kinder Bueno">
+        <img src="assets/kinder.png" alt="Kinder Bueno" onerror="this.style.display='none'">
+        <span class="choc-fallback">🍫</span>
+        <span class="choc-label">Kinder Bueno</span>
+      </button>
+      <button class="choc-card" data-choc="KitKat">
+        <img src="assets/kitkat.png" alt="KitKat" onerror="this.style.display='none'">
+        <span class="choc-fallback">🍫</span>
+        <span class="choc-label">KitKat</span>
+      </button>
+    </div>
+
+    <p class="investigation-result" id="chocResult" aria-live="polite"></p>
+
+    <button class="btn btn-primary" data-next="s5">Keep going →</button>
+  </section>
+
+  <!-- SCREEN 5 — GALLERY -->
+  <section class="screen screen-gallery" id="s5">
+    <p class="eyebrow">quest file // 006</p>
+    <h2 class="section-title">Exhibits A through Whatever</h2>
+    <p class="section-sub">evidence that I actually put effort into this</p>
+
+    <div class="scrapbook">
+      <figure class="scrap-photo rot-l hero-photo" data-name="rudo.png">
+        <span class="tape tape-top"></span>
+        <img src="assets/rudo.png" alt="Rudo-inspired reference image" onerror="this.parentElement.classList.add('img-missing')">
+        <figcaption>exhibit A — RUDO CUTE BABY</figcaption>
+      </figure>
+
+      <figure class="scrap-photo rot-r" data-name="cat.webp">
+        <span class="tape"></span>
+        <img src="assets/cat.webp" alt="the cat, again, because it deserves two appearances" onerror="this.parentElement.classList.add('img-missing')">
+        <figcaption>exhibit B — happy cat, sneak it everywhere</figcaption>
+      </figure>
+
+      <figure class="scrap-photo rot-l" data-name="fries.png">
+        <span class="tape"></span>
+        <img src="assets/fries.png" alt="fries" onerror="this.parentElement.classList.add('img-missing')">
+        <figcaption>exhibit C — french fries. ur best food <3</figcaption>
+      </figure>
+
+      <figure class="scrap-photo rot-r small-trio">
+        <div class="trio">
+          <img src="assets/kitkat.png" alt="KitKat" onerror="this.style.display='none'">
+          <img src="assets/twix.png" alt="Twix" onerror="this.style.display='none'">
+          <img src="assets/kinder.png" alt="Kinder Bueno" onerror="this.style.display='none'">
+        </div>
+        <figcaption>exhibit D — ur yummy chocolate</figcaption>
+      </figure>
+    </div>
+
+    <button class="btn btn-primary" data-next="s6">Last part, promise →</button>
+  </section>
+
+  <!-- SCREEN 6 — FINAL MESSAGE + INTERACTION -->
+  <section class="screen screen-final" id="s6">
+    <p class="eyebrow">quest file // 007 — final</p>
+
+    <div class="scrap-heart" id="scrapHeart" aria-hidden="true">
+      <svg viewBox="0 0 200 180">
+        <path class="heart-piece piece-1" d="M100 170 C40 120 10 80 10 50 C10 20 35 5 60 15 C80 22 95 40 100 55 L100 170 Z"/>
+        <path class="heart-piece piece-2" d="M100 170 C160 120 190 80 190 50 C190 20 165 5 140 15 C120 22 105 40 100 55 L100 170 Z"/>
+        <circle class="heart-rivet" cx="100" cy="55" r="5"/>
+      </svg>
+    </div>
+
+    <div class="final-message">
+      <p>That's it.</p>
+      <p>I'm not expecting a magical forgiveness button to fix everything.</p>
+      <p>I know trust takes time, and you already told me you're willing to let me try.</p>
+      <p>So I'll try.</p>
+      <p class="aside">Also, I spent an good effort making this quickly instead of just saying sorry like a normal person.</p>
+      <p class="thanks">Thank you for still being here, Ash.</p>
+      <p class="warn">Now please don't whoop my ass, it wasn't fanfic</p>
+      <p class="icon-row">🍟 🐈 🍫 ⚙️</p>
+    </div>
+
+    <div class="quest-choice">
+      <button class="btn btn-primary" id="acceptBtn">Quest accepted</button>
+      <button class="btn btn-ghost" id="waitBtn">Not ready to accept quest yet</button>
+    </div>
+
+    <div class="not-ready-msg" id="notReadyMsg" hidden>
+      <p>That's okay.</p>
+      <p>The quest isn't timed.</p>
+      <p>I will simply wait for you as long as u want.</p>
+      <span class="fries-standby">🍟</span>
+    </div>
+
+    <div class="feedback-block" id="feedbackBlock">
+      <p class="feedback-q">How was the tiny apology gift? (totally optional)</p>
+      <div class="feedback-options">
+        <button data-choice="Cute">Cute</button>
+        <button data-choice="I accept the snacks">I accept the snacks</button>
+        <button data-choice="You tried">You tried 😭</button>
+        <button data-choice="I still need time">I still need time</button>
+      </div>
+      <p class="feedback-thanks" id="feedbackThanks" hidden></p>
+    </div>
+  </section>
+
+</main>
+
+<div class="candy-rain" id="candyRain" aria-hidden="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
